@@ -1,4 +1,17 @@
-# @TODO Visualiseer iedere letter, in random kleur, uit de string NMD via methode show_letter en een loop (1s per iteratie). Na laatste letter herhaalt voorgaande functionaliteit na 3s
-# Uitbreiding: Maak de tekst (string) en de snelheid van de loop instelbaar via de input van de CLI.
+from sense_hat import SenseHat 
+from time import sleep
+from random import randint
 
-import sense_hat from SenseHat 
+random_color1 = (randint(0, 255), randint(0, 255), randint(0, 255)) 
+random_color2 = (randint(0, 255), randint(0, 255), randint(0, 255)) 
+random_color3 = (randint(0, 255), randint(0, 255), randint(0, 255)) 
+
+sense = SenseHat()
+
+while True:
+	sense.show_letter("N", random_color1)
+	sleep(1)
+	sense.show_letter("M", random_color2)
+	sleep(1)
+	sense.show_letter("D", random_color3)
+	sleep(3)
