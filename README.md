@@ -1,2 +1,7 @@
 # Labo 2
-nmd.py
+## avatar_animated.py
+1. Pinguin
+2. Snowman
+3. Ghost
+4. Scorpio
+
